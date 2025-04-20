@@ -232,7 +232,11 @@ int main(int argc, char *argv[]) {
   size_t file_size = ftell(file);
   fseek(file, 0, SEEK_SET);
   char *data = malloc(file_size + 1);
-  fread(data, 1, file_size, file);
+  int res = fread(data, 1, file_size, file);
+  if (!res) {
+    printf("Could not read file. Exiting.\n");
+    return res;
+  }
   data[file_size] = '\0';
 
   JSONLexer lexer = {0};
