@@ -1,0 +1,19 @@
+{
+    "name": "Bob",
+    "age": 20,
+    "integer": 1,
+    "string": "Heållo, World!",
+    "boolean": true,
+    "falsething": false,
+    "quoted string": "Heaall\"o, World!",
+    "array": [
+        1,
+        2,
+        3
+    ],
+    "object": {
+        "name": "Bob",
+        "age": 20
+    },
+    "none thing": null
+}
